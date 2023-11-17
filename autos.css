@@ -115,13 +115,13 @@ img{
 }
 .clima{
     padding-left: 45%;
-    margin-top: -300px;
+    margin-top: -325px;
     min-height: 100vh;
     min-width: 120vh;
 }
 .clima img{
-    height: 15vh;
-    width: 18vh;  
+    height: 12vh;
+    width: 15vh;  
 }
 .container-items{
     gap: 40px;
