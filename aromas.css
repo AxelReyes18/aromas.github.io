@@ -172,3 +172,8 @@ footer img{
     height: 12vh;
     width: 15vh;  
 }
+.clima p{
+    margin-top: 25px;
+    opacity: 0.5;
+    margin-left: -20%;
+}
