@@ -1,9 +1,7 @@
 *{margin: 0;
-padding: 0;
-box-sizing: border-box;
-overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -17,17 +15,25 @@ header{
     min-height: 12vh;
     background-image:url(https://i.pinimg.com/736x/82/f2/1d/82f21d4fab0141ec3bd035e01e39cb3b.jpg);
     background-size: cover;
-    width: 100%;
 }
 header img{
-    max-height: 50px;
+    height: 50px;
     margin-right: 10px;
 }
 .container ul li{ 
     display: inline-block;
     padding: 10px 20px;
-    font-family: "fuente1";
+    font-family: "fuente";
     letter-spacing: 3px;
+}
+.container ul1 li{ 
+    display: inline-block;
+    font-family: "fuente";
+    letter-spacing: 3px;
+    margin-left: 100vh;
+    background-color: #b48fee;
+    border-radius: 25px;
+    padding: 5px 10px;
 }
 .container a{
     color: rgb(66, 0, 128);
@@ -44,74 +50,9 @@ header img{
     margin-top: 10px;
 }
 @font-face{
-    font-family: fuente1;
+    font-family: fuente;
     src:url(Fluence_DEMO[1].ttf);
 }
-body{
-    position: relative;
-    padding-bottom: 300px;
-}
-body a img{
-    min-width: 30px;
-    min-height: 30px;
-    margin-top: 12px;
-}
-h1{
-    font-family: "fuente";
-    font-size: 45px;
-}
-@font-face{
-    font-family: fuente;
-    src:url(Funkorama.ttf);
-}
-.productos{
-    width: 100%;
-    min-height: 100vh;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 90px;
-}
-.section-productos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.section-productos .carta{
-    flex: 1;
-    margin: 20px 20px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
-}
-.section-productos .carta img{
-    width: 100%;
-    height: auto;
-}
-.section-productos .carta h2{
-    margin: 15px 0px;
-    font-size: 28px;
-    color: #000000;
-    font-family: sans-serif;
-}
-.section-productos .carta p{
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 0px 10px;
-    margin-bottom: 20px;
-    font-family: sans-serif;
-}
-@media screen and (max-width:768px){
-    .section-productos{
-        flex-direction: column;
-    }
-    
-}
-@font-face{
-    font-family: fuentes;
-    src:url(Micker.ttf);
-}
-
 footer{
     background-image:url(https://i.pinimg.com/736x/82/f2/1d/82f21d4fab0141ec3bd035e01e39cb3b.jpg);
     background-size: cover;
@@ -149,6 +90,15 @@ footer img{
     width: 35px;
     height: 35px;
 }
+body{
+    font-family: 'lato';
+    color: #333;
+    position: relative;
+    padding-bottom: 300px;
+}
+img{
+    max-width: 100%;
+}
 .ubicacion{
     align-items: center;
     justify-content: center;
@@ -163,6 +113,11 @@ footer img{
 .ubicacion .imgubi{
     text-decoration: none;
 }
+.ubicacion .imgubi ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 .clima{
     padding-left: 45%;
     margin-top: -325px;
@@ -173,6 +128,16 @@ footer img{
     height: 12vh;
     width: 15vh;  
 }
+.container-items{
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, 
+        minmax(
+            300px, 
+            1fr)
+        )
+}
 .clima p{
     margin-top: 25px;
     opacity: 0.5;
@@ -180,7 +145,7 @@ footer img{
 }
 @media (max-width:425px){
     .clima p{
-        margin-top: 38px;
+        margin-top: 50px;
         opacity: 0.5;
         margin-left: -20%;
     }
